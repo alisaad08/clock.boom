@@ -31,3 +31,20 @@ a.boxShadow = "0px 0px 20px 10px black";
 a.padding = "20px"; 
 a.fontSize = "50px";
 a.backgroundColor = "white"
+
+
+
+    // MEDIA SO'ROV (JavaScript orqali)
+    if (window.matchMedia("(max-width: 600px)").matches) {
+        // Telefon uchun o'lchamlar
+        b.width = "100%";
+        b.marginLeft = "0";
+        a.fontSize = "30px"; // Telefonda kichikroq shrift
+    } else {
+        // Kompyuter uchun o'lchamlar
+        b.width = "100%"; 
+        b.marginLeft = "0";
+        a.fontSize = "50px";
+    }
+
+
